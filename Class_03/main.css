@@ -14,6 +14,18 @@
     background-color: lightskyblue;
 }
 
+.yellow{
+    background-color: lightgoldenrodyellow;
+}
+
+.cyan{
+    background-color: darkturquoise;
+}
+
+.purple{
+    background-color: plum;
+}
+
 .floater-section{
     float: left;
     width: 100%;
@@ -25,8 +37,59 @@
     clear: both;
 }
 
-@media(min-width:768px){
-    .floater-section{
+/*----------SMALL SCREENS----------*/
+@media(min-width:450px){
+    .small-width-25{
+        width: 25%;
+    }
+
+    .small-width-33{
         width: 33.3333%;
+    }
+
+    .small-width-50{
+        width: 50%;
+    }
+
+    .small-width-100{
+        width: 100%;
+    }
+}
+
+/*----------MEDIUM SCREENS----------*/
+@media(min-width:768px){
+    .medium-width-25{
+        width: 25%;
+    }
+
+    .medium-width-33{
+        width: 33.3333%;
+    }
+
+    .medium-width-50{
+        width: 50%;
+    }
+
+    .medium-width-100{
+        width: 100%;
+    }
+}
+
+/*----------LARGE SCREENS----------*/
+@media(min-width:992px){
+    .large-width-25{
+        width: 25%;
+    }
+
+    .large-width-33{
+        width: 33.3333%;
+    }
+
+    .large-width-50{
+        width: 50%;
+    }
+
+    .large-width-100{
+        width: 100%;
     }
 }
