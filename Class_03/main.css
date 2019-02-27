@@ -1,3 +1,19 @@
 .container{
     background-color: oldlace;
 }
+
+.red{
+    background-color: lightcoral;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.blue{
+    background-color: lightskyblue;
+}
+
+.floater-section{
+    float: left;
+}
