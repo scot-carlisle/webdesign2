@@ -5,13 +5,13 @@ body{
     margin: 0px;
 }
 
-.container{
+.cats, .dogs, .fish, .rats{
     background-color: #63ADF2;
     border-radius: 17px;
     border: 7px solid #181e20;
     text-align: center;
     font-size: 30px;
-    margin: 40px auto;
+    margin: 10px 10px;
 }
 
 .container img{
@@ -21,7 +21,6 @@ body{
 
 .floater-section{
     float: left;
-    width: 100%;
     min-height: 200px;
     margin-bottom: 20px;
 }
@@ -80,29 +79,11 @@ p{
     font-family: 'Neucha', cursive;
 }
 
-/*----------SMALL SCREENS----------*/
-@media(min-width: 450px){
-    .small-width-25{
-        width: 25%;
-    }
-
-    .small-width-33{
-        width: 33.3333%;
-    }
-
-    .small-width-50{
-        width: 50%;
-    }
-
-    .small-width-100{
-        width: 100%;
-    }
-}
-
 /*----------MEDIUM SCREENS----------*/
 @media(min-width: 768px){
-    .container{
+    .floater-section{
         background-color: #AB9DF0;
+        margin-left: 20px;
     }  
 
     .active-link{
@@ -114,42 +95,19 @@ p{
         padding: 0px 20px;
     }
 
-    .medium-width-25{
-        width: 25%;
+    .medium-width-44{
+        width: 44%;
     }
 
-    .medium-width-33{
-        width: 33.3333%;
-    }
-
-    .medium-width-50{
-        width: 50%;
-    }
-
-    .medium-width-100{
-        width: 100%;
-    }
 }
 
 /*----------LARGE SCREENS----------*/
 @media(min-width: 992px){
-    .container{
+    .floater-section{
         background-color: #1FB5E2;
     }
 
-    .large-width-25{
-        width: 25%;
-    }
-
-    .large-width-33{
-        width: 33.3333%;
-    }
-
-    .large-width-50{
-        width: 50%;
-    }
-
-    .large-width-100{
-        width: 100%;
+    .large-width-20{
+        width: 20%;
     }
 }
