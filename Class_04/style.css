@@ -1,7 +1,14 @@
 .content{
     padding: 0px 10px;
+    min-height: 500px;
+    border-bottom: 2px solid plum;
+}
+
+.content .img-container{
+    min-height: 200px;
 }
 
 .content img{
     max-width: 100%;
 }
+
