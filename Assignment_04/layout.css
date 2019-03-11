@@ -15,6 +15,13 @@
     clear: both;
 }
 
+.content{
+    padding: 0px 10px;
+    min-height: 560px;
+    border-bottom: 2px solid rgb(202, 122, 202);
+    position: relative;
+}
+
 /*----------SMALL SCREENS----------*/
 @media(min-width:450px){
     .container{
@@ -40,6 +47,10 @@
 
 /*----------MEDIUM SCREENS----------*/
 @media(min-width:768px){
+.content{
+    min-height: 680px;
+}
+
     .container{
         width: 760px;
     }
@@ -63,6 +74,9 @@
 
 /*----------LARGE SCREENS----------*/
 @media(min-width:992px){
+    .content{
+        min-height: 610px;
+    }
     .container{
         width: 960px;
     }
