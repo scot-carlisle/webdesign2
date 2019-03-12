@@ -29,7 +29,7 @@ nav.navbar a{
 .active-link{
     border-bottom: 2px solid whitesmoke;
     margin: 0px 100px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .content .img-container{
@@ -68,4 +68,11 @@ p{
     margin-top: 20px;
     font-family: 'Raleway', sans-serif;
     color: whitesmoke;
+}
+
+p a{
+    color: rgb(202, 122,202);
+    text-decoration: none;
+    font-family: 'Charm', cursive;
+    font-size: 26px;
 }
