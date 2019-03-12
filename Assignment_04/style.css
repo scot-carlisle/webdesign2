@@ -44,13 +44,16 @@ nav.navbar a{
     position: absolute;
 }
 
-h1, h2, p{
+h1, h2, h3, h4, p{
     text-align: center;
 }
 
-h2{
-    margin-bottom: 0px;
-    font-family: 'Neucha', cursive;
+h2, h3, h4{
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
 }
 
 h1{
