@@ -1,0 +1,29 @@
+/*--Look at css-tricks.com--*/
+.content{
+    height: 200px;
+    background-color: darkseagreen;
+    text-align: center;
+}
+
+.coral{
+    background-color: coral;
+}
+
+p{
+    vertical-align: middle;
+    height: 200px;
+    display: table-cell;
+}
+
+#vertical-center1{
+    position: relative;
+    height: 200px;
+}
+
+#vertical-center1{
+    position: absolute;
+    height: 100px; /*because we need to calculate teh margin*/
+    margin-top: -50px;
+    top: 50%;
+    display: block;
+}
