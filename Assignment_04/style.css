@@ -48,12 +48,12 @@ h1, h2, h3, h4, p{
     text-align: center;
 }
 
-h2, h3, h4{
+h2, h3{
     font-size: 20px;
     line-height: 24px;
     margin-top: 20px;
     font-family: 'Raleway', sans-serif;
-    color: whitesmoke;
+    color: rgb(202, 122,202);
 }
 
 h1{
@@ -62,7 +62,18 @@ h1{
     font-size: 80px;
     margin: 30px auto;
     color: rgb(36, 35, 27);
+}
 
+h2{
+    color: whitesmoke;
+}
+
+h4{
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
 }
 
 p{
