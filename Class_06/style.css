@@ -1,7 +1,9 @@
 img{
     max-width: 100%;
-    filter: hue-rotate(235deg);
+    /*--w3schools for filter types--*/
+    filter: hue-rotate(235deg) blur(8px) contrast(150%);
 }
+/*--more filters include invert(%), grayscale(%), drop-shadow(1px 1px 1px color), brightness(%)--*/
 
 .square{
     width: 300px;
