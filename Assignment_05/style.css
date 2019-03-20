@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Margarine');
 
+body{
+    background-color: palegoldenrod;
+}
 .red{
-    background-color: lightcoral;
+    background-color: #f99a9a;
 }
 
 .beachblue{
@@ -36,19 +39,19 @@
 }
 
 #vertCenter1 img {
-    margin-left: 88px;
+    margin-left: 85px;
     position: absolute;
     height: 170px;
-    margin-top: -84px;
+    margin-top: -85px;
     top: 50%;
     display: block;
 }
 
 #vertCenter3 img {
-    margin-left: 75px;
+    margin-left: 70px;
     position: absolute;
     height: 170px;
-    margin-top: -84px;
+    margin-top: -85px;
     top: 50%;
     display: block;
 }
