@@ -3,12 +3,13 @@
 body{
     background-color: palegoldenrod;
 }
+
 .red{
     background-color: #f99a9a;
 }
 
 .beachblue{
-    background-color: rgb(0, 132, 209);
+    background-color: rgba(0, 132, 209, 0.82);
 }
 
 .yellow {
