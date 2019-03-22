@@ -1,17 +1,18 @@
-nav.navbar{
+nav{
     background-color: rgb(36, 35, 27);
     width: 100%;
     padding: 10px 0px;
 }
 
-nav.navbar ul{
+nav ul{
     list-style: none;
     padding: 0px;
     margin: 0px;
     text-align: center;
+    display: none;
 }
 
-nav.navbar a{
+nav a{
     font-size: 22px;
     text-decoration: none;
     color: rgb(202, 122, 202);
@@ -24,3 +25,69 @@ nav.navbar a{
     margin: 0px 100px;
     font-weight: 900;
 }
+
+.display-toggle{
+    padding: 3px;
+    width: 40px;
+}
+
+.display-toggle .stripe{
+    margin-bottom: 5px;
+    display: block;
+    height: 1px;
+    width: 10px;
+    margin-top: 4px;
+}
+
+.display-toggle .stripe::before{
+    content: '';
+    position: absolute;
+    width: 21px;
+    border-top: 3px solid darkgray;
+}
+
+.display-toggle:hover + ul{
+    display: block;
+}
+
+@media(min-width:450px){
+    nav{
+        background-color: rgb(36, 35, 27);
+        width: 100%;
+        padding: 10px 0px;
+    }
+    
+    nav ul{
+        display: block;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    nav li{
+        display: block;
+        border-bottom: 0px;
+        min-width: 19%;
+        font-size: 16px;
+    }
+    
+    nav a{
+        font-size: 22px;
+        text-decoration: none;
+        color: rgb(202, 122, 202);
+        line-height: 36px;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .active-link{
+        border-bottom: 2px solid whitesmoke;
+        margin: 0px 100px;
+        font-weight: 900;
+    }
+    
+    .display-toggle{
+        display: none;
+    }
+}
+
