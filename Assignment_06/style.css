@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-color: black;
 }
 
 nav{
@@ -61,7 +62,25 @@ nav a{
 .content img{
     max-width: 100%;
     min-height: 160px;
+    position: absolute;
 }
+
+.content{
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    color: whitesmoke;
+    top: -19px;
+    left: 5px;
+}
+
+h2{
+    position: absolute;
+    color: whitesmoke;
+    top: 16px;
+    left: 5px;
 }
 
 @media(min-width:450px){
