@@ -6,7 +6,7 @@ body{
 nav{
     background-color: white;
     width: 100%;
-    height: 110px;
+    height: 120px;
 }
 
 nav ul{
@@ -36,7 +36,7 @@ nav a{
     width: 40px;
     float: right;
     top: 1px;
-    right: 70px;
+    right: 5px;
 }
 
 .display-toggle .stripe{
@@ -62,6 +62,8 @@ nav a{
     height: 110px;
     float: left;
     position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 .content .img-container{
@@ -72,11 +74,19 @@ nav a{
     max-width: 100%;
     min-height: 160px;
     position: absolute;
+    border-bottom: 2px solid white;
 }
 
 .content{
     position: relative;
 }
+
+#burger{
+    max-width:100%;
+    min-height: 150px;
+    position: relative;
+    }
+
 
 
 @media(min-width:450px){
@@ -92,6 +102,7 @@ nav a{
         padding: 0px;
         margin: 0px;
         margin-right: 25px;
+        text-align: right;
     }
 
     nav li{
@@ -109,6 +120,7 @@ nav a{
         color: #020202;
         line-height: 36px;
         font-family: 'Raleway', sans-serif;
+        padding-right: 10px;
     }
     
     .display-toggle{

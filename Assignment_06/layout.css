@@ -5,16 +5,22 @@
 .floater-section{
     float: left;
     width: 100%;
-    min-height: 200px;
-    margin-bottom: 20px;
+    min-height: 230px;
+    margin-bottom: 0px;
 }
 
 .clearfix{
+    margin-bottom: 20px;
     clear: both;
 }
 
 /*----------SMALL SCREENS----------*/
 @media(min-width:450px){
+    .floater-section{
+        float: left;
+        min-height: 260px;
+        margin-bottom: 0px;
+    }
    
     .small-width-25{
         width: 25%;
