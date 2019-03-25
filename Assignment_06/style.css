@@ -4,9 +4,9 @@ body{
 }
 
 nav{
-    background-color: rgb(241, 241, 234);
+    background-color: white;
     width: 100%;
-    padding: 10px 0px;
+    height: 110px;
 }
 
 nav ul{
@@ -15,28 +15,28 @@ nav ul{
     margin: 0px;
     text-align: center;
     display: none;
+    height: 110px;
 }
 
 nav a{
     font-size: 22px;
     text-decoration: none;
-    color: rgb(202, 122, 202);
+    color: #020202;
     line-height: 36px;
     font-family: 'Raleway', sans-serif;
 }
 
 .active-link{
-    border-bottom: 2px solid whitesmoke;
     font-weight: 900;
 }
 
-.navfix{
-    clear: both;
-}
-
 .display-toggle{
+    position: absolute;
     padding: 3px;
     width: 40px;
+    float: right;
+    top: 1px;
+    right: 70px;
 }
 
 .display-toggle .stripe{
@@ -58,6 +58,12 @@ nav a{
     display: block;
 }
 
+#logo{
+    height: 110px;
+    float: left;
+    position: absolute;
+}
+
 .content .img-container{
     min-height: 160px;
 }
@@ -72,19 +78,6 @@ nav a{
     position: relative;
 }
 
-h1{
-    position: absolute;
-    color: whitesmoke;
-    top: -19px;
-    left: 5px;
-}
-
-h2{
-    position: absolute;
-    color: whitesmoke;
-    top: 16px;
-    left: 5px;
-}
 
 @media(min-width:450px){
     nav{
@@ -97,31 +90,33 @@ h2{
         display: block;
         list-style-type: none;
         padding: 0px;
-        margin: 10px;
+        margin: 0px;
+        margin-right: 25px;
     }
 
     nav li{
+        margin-right: 3px;
         display: inline-block;
         border-bottom: 0px;
-        min-width: 19%;
         font-size: 16px;
-        padding: 20px;
+        margin-top: 40px;
+        margin-left: 5px;
     }
     
     nav a{
         font-size: 22px;
         text-decoration: none;
-        color: rgb(202, 122, 202);
+        color: #020202;
         line-height: 36px;
         font-family: 'Raleway', sans-serif;
     }
     
-    .active-link{
-        font-weight: 900;
-    }
-    
     .display-toggle{
         display: none;
+    }
+
+    #logo{
+        position: relative;
     }
 
 }
