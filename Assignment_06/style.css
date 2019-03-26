@@ -53,7 +53,7 @@ nav a{
     content: '';
     position: absolute;
     width: 21px;
-    border-top: 3px solid darkgray;
+    border-top: 3px solid #020202;
 }
 
 .display-toggle:hover + ul{
@@ -69,7 +69,7 @@ nav a{
 }
 
 .content .img-container{
-    min-height: 160px;
+    min-height: 212px;
 }
 
 .content img{
@@ -93,6 +93,13 @@ p{
     font-family: 'Roboto Mono', monospace;
     }
 
+#p1{
+    margin-top: 40px;
+    }
+
+#p2{
+        margin-top: 26px;
+    }
 
 
 @media(min-width:450px){
@@ -137,16 +144,50 @@ p{
         position: relative;
     }
 
+    #p1{
+        margin-top: 80px;
+        }
+    
+    #p2{
+        margin-top: 75px;
+        }
+        
 }
 
 @media(min-width:768px){
     #restaurant{
         min-height: 600px;
     }
+
+    #p1{
+        margin-top: 140px;
+        font-size: 22px;
+        text-align: left;
+        }
+    
+    #p2{
+        margin-top: 120px;
+        font-size: 22px;
+        text-align: left;
+        }
 }
 
 @media(min-width:992px){
     #restaurant{
         min-height: 670px;
     }
+
+    #p1{
+        margin-top: 175px;
+        font-size: 24px;
+        text-align: left;
+        margin-left: 30px;
+        }
+    
+    #p2{
+        margin-left: -60px;
+        margin-top: 160px;
+        font-size: 24px;
+        text-align: left;
+        }
 }

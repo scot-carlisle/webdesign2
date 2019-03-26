@@ -23,7 +23,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 40px;
-    text-align: justify;
+    text-align: center;
 }
 
 .floater-section2{
@@ -31,6 +31,7 @@
     width: 100%;
     min-height: 230px;
     margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 .clearfix{
@@ -72,7 +73,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         margin-top: 70px;
-        text-align: justify;
+        text-align: center;
     }
    
     .small-width-25{
