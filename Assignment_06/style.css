@@ -101,6 +101,11 @@ p{
         margin-top: 26px;
     }
 
+#menu{
+    margin-top:30px;
+    }
+
+
 
 @media(min-width:450px){
     nav{
@@ -151,7 +156,7 @@ p{
     #p2{
         margin-top: 75px;
         }
-        
+    
 }
 
 @media(min-width:768px){
