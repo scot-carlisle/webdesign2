@@ -1,6 +1,5 @@
 body{
     margin: 0px;
-    background-color: black;
 }
 
 nav{
@@ -86,6 +85,10 @@ nav a{
     position: relative;
     }
 
+p{
+    color: white;
+    }
+
 
 
 @media(min-width:450px){
@@ -132,3 +135,14 @@ nav a{
 
 }
 
+@media(min-width:768px){
+    #restaurant{
+        min-height: 600px;
+    }
+}
+
+@media(min-width:992px){
+    #restaurant{
+        min-height: 670px;
+    }
+}

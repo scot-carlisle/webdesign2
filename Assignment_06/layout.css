@@ -1,6 +1,6 @@
 .container{
     margin: auto;
-    background-color: lemonchiffon;
+    background-color: #020202;
 }
 .floater-section{
     float: left;
@@ -30,7 +30,7 @@
     float: left;
     width: 100%;
     min-height: 230px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
 }
 
 .clearfix{
@@ -62,7 +62,7 @@
     .floater-section2{
         float: left;
         min-height: 150px;
-        margin-bottom: 0px;
+        margin-bottom: 35px;
     }
 
     .floater-section1 p{
