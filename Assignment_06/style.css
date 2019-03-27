@@ -70,12 +70,13 @@ nav a{
 
 .content .img-container{
     min-height: 212px;
+    background-image: url(../Assignment_06/assests/images/mnm-all-551345-unsplash.jpg);
+    background-size: cover;
 }
 
 .content img{
     max-width: 100%;
-    min-height: 160px;
-    position: absolute;
+    
 }
 
 .content{
@@ -100,6 +101,10 @@ p{
 #p2{
         margin-top: 26px;
     }
+
+.img-containermenu{
+    text-align: center;
+}
 
 #menu{
     margin-top:30px;
@@ -149,6 +154,10 @@ p{
         position: relative;
     }
 
+    .content .img-container{
+        min-height: 320px;
+    }
+
     #p1{
         margin-top: 80px;
         }
@@ -175,6 +184,10 @@ p{
         font-size: 22px;
         text-align: left;
         }
+    
+    .content .img-container{
+        min-height: 420px;
+        }
 }
 
 @media(min-width:992px){
@@ -194,5 +207,9 @@ p{
         margin-top: 160px;
         font-size: 24px;
         text-align: left;
+        }
+
+    .content .img-container{
+        min-height: 520px;
         }
 }
