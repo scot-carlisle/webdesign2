@@ -96,10 +96,12 @@ p{
 
 #p1{
     margin-top: 40px;
+    text-transform: capitalize;
     }
 
 #p2{
         margin-top: 26px;
+        text-transform: capitalize;
     }
 
 .img-containermenu{
