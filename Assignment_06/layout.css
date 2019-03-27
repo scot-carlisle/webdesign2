@@ -32,7 +32,7 @@
     width: 100%;
     min-height: 230px;
     margin-bottom: 0px;
-    margin-top: 87px;
+    margin-top: 90px;
 }
 
 .floater-section3{
@@ -82,17 +82,17 @@
         float: left;
         margin-bottom: 0px;
         margin-top: 0px;
-        min-height: 200px;
+        min-height: 180px;
     }
 
     .floater-section1 h1{
-        width: 190px;
+        width: 217px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin-top: 70px;
-        text-align: center;
+        margin-top: 78px;
+        text-align: left;
     }
 
     .floater-sectionmenu{
@@ -136,6 +136,14 @@
     .clearfix{
         clear: both;
     }
+
+    .floater-section1 h1{
+        width: 305px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
    
     .medium-width-25{
         width: 25%;
@@ -166,6 +174,14 @@
 @media(min-width:992px){
     .clearfix{
         clear: both;
+    }
+
+    .floater-section1 h1{
+        width: 365px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     
     .large-width-25{

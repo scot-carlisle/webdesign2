@@ -9,15 +9,16 @@ nav{
     background-color: white;
     width: 100%;
     height: 120px;
+    margin-top: 5px;
 }
 
 nav ul{
     list-style: none;
     padding: 0px;
     margin: 0px;
-    text-align: center;
-    display: none;
+    text-align: right;
     height: 110px;
+    margin-right: 15px;
 }
 
 nav a{
@@ -64,7 +65,7 @@ nav a{
     height: 110px;
     float: left;
     position: absolute;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-left: 10px;
 }
 
@@ -84,6 +85,7 @@ nav a{
 }
 
 #burger{
+    border-bottom: 10px solid white;
     max-width:100%;
     min-height: 150px;
     position: relative;
@@ -121,8 +123,8 @@ p{
     }
 
 #p-about{
-    line-height: 35px;
-    font-size: 20px;
+    line-height: 30px;
+    font-size: 15px;
     margin: 20px 20px;
     text-align: left;
 }
@@ -207,20 +209,33 @@ h3{
     }
 
     #p1{
+        margin-left: 2px;
         text-transform: capitalize;
-        font-size: 17px;
+        font-size: 18px;
         font-family: 'Roboto Mono', monospace;
         }
     
     #p2{
-        margin-top: 70px;
+        margin-left: 5px;
+        margin-top: 75px;
         text-transform: capitalize;
-        font-size: 17px;
+        font-size: 18px;
         font-family: 'Roboto Mono', monospace;
         }
 
+    #p-about{
+            line-height: 32px;
+            font-size: 20px;
+            margin: 20px 25px;
+            text-align: left;
+        }
+
     #restaurant{
-        margin-top: 0px;
+        margin-top: 15px;
+    }
+
+    #burger{
+        border-bottom: 20px solid #020202;
     }
     
 }
@@ -235,7 +250,7 @@ h3{
     
     #p2{
         margin-top: 120px;
-        font-size: 22px;
+        font-size: 25px;
         text-align: left;
         }
     
@@ -247,16 +262,16 @@ h3{
 @media(min-width:992px){
     
     #p1{
-        margin-top: 175px;
-        font-size: 24px;
+        margin-top: 150px;
+        font-size: 30px;
         text-align: left;
-        margin-left: 30px;
+        margin-left: 0px;
         }
     
     #p2{
-        margin-left: -60px;
-        margin-top: 160px;
-        font-size: 24px;
+        margin-left: 0px;
+        margin-top: 145px;
+        font-size: 30px;
         text-align: left;
         }
 
