@@ -89,6 +89,12 @@ nav a{
     position: relative;
     }
 
+#breakfast{
+        max-width:100%;
+        min-height: 150px;
+        position: relative;
+        }
+
 p{
     color: white;
     font-family: 'Roboto Mono', monospace;
@@ -143,6 +149,7 @@ h3{
 }
 
 #restaurant{
+    margin-top: 73px;
     width: 100%
 }
 
@@ -200,18 +207,21 @@ h3{
     }
 
     #p1{
-        margin-top: 20px;
         text-transform: capitalize;
-        font-size: 18px;
+        font-size: 17px;
         font-family: 'Roboto Mono', monospace;
         }
     
     #p2{
-        margin-top: 30px;
+        margin-top: 70px;
         text-transform: capitalize;
-        font-size: 18px;
+        font-size: 17px;
         font-family: 'Roboto Mono', monospace;
         }
+
+    #restaurant{
+        margin-top: 0px;
+    }
     
 }
 
