@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 </head>
-<body>
+<body id="mainBody">
     <h1>Hello World</h1>
     <button href="#numberBox">Span</button>
 
@@ -25,9 +25,12 @@
 
       var textColor = "rgb(" + redColor + "," + greenColor + "," + blueColor + ")";
       var subHeader = numberSpan.parentElement;
-      subHeader.style.color = textColor;
+      //subHeader.style.color = textColor;// //un-note this for the h2 to change colors PART 1//
 
-      console.log(numberSpan.parentElement);
+      console.log(textColor);
+
+      var body = document.getElementById("mainBody");
+      body.style.backgroundColor = textColor; //note this to have h2 change color PART 2//
 
     </script>
     
