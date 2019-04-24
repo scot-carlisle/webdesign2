@@ -18,10 +18,8 @@
       var randomNumber = Math.random();
       numberSpan.innerText = randomNumber;
 
-      var myButton = document.getElementById("triggerButton");
-
-      myButton.addEventListener("click", function(){
-
+      var changeBackground = function(){
+      
       var redColor = Math.random() *255;
       var greenColor = Math.random() *255;
       var blueColor = Math.random() *255;
@@ -34,8 +32,14 @@
 
       var body = document.getElementById("mainBody");
       body.style.backgroundColor = textColor; //note this to have h2 change color PART 2//
-      })
-      
+      }
+
+      var myButton = document.getElementById("triggerButton");
+
+      myButton.addEventListener("click", changeBackground);
+
+      changeBackground();
+
     </script>
     
 </body>
