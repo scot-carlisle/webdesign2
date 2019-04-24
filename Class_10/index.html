@@ -9,9 +9,16 @@
 </head>
 <body>
     <h1>Hello World</h1>
+    <button href="#numberBox">Span</button>
+
+    <h2>Today's Number is: <span id="numberBox"></span></h2>
 
     <script>
-        alert("IT'S ON FIRE!!!!");
+      var numberSpan = document.getElementById("numberBox");
+      console.log(numberSpan);
+
+      var randomNumber = Math.random();
+      numberSpan.innerText = randomNumber;
     </script>
     
 </body>
