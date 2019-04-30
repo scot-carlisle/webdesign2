@@ -8,10 +8,16 @@
     
 </head>
 <body>
-    <h1>Today's Color Is:</h1>
+    <h1>Today's Colors Are:</h1>
     <button id="triggerButton">Color</button>
-    <div id="colorBox" style="width:400px;height:400px;margin-top:30px;"></div>
-    
+
+  <div class="container">
+    <div id="colorBox" style="width:50%;height:400px;margin-top:30px;float: left;"></div>
+    <div id="colorBox2" style="width:50%;height:400px;margin-top:30px;float:left;"></div>
+    <div id="colorBox3" style="width:50%;height:400px;float:left;"></div>
+    <div id="colorBox4" style="width:50%;height:400px;float:left;"></div>
+  </div>
+
     <script>
       var numberSpan = document.getElementById("colorBox");
       var randomNumber = Math.random();
@@ -23,6 +29,9 @@
       var blueColor = Math.random() *255;
 
       var textColor = "rgb(" + redColor + "," + greenColor + "," + blueColor + ")";
+      var textColor2 = "rgb(" + greenColor + "," + redColor + "," + blueColor + ")";
+      var textColor3 = "rgb(" + blueColor + "," + greenColor + "," + redColor + ")";
+      var textColor4 = "rgb(" + redColor + "," + blueColor + "," + greenColor + ")";
       var subHeader = numberSpan.parentElement;
      
 
@@ -30,6 +39,12 @@
 
       var colorBox = document.getElementById("colorBox");
       colorBox.style.backgroundColor = textColor; 
+      var colorBox = document.getElementById("colorBox2");
+      colorBox.style.backgroundColor = textColor2; 
+      var colorBox = document.getElementById("colorBox3");
+      colorBox.style.backgroundColor = textColor3; 
+      var colorBox = document.getElementById("colorBox4");
+      colorBox.style.backgroundColor = textColor4; 
       }
 
       var myButton = document.getElementById("triggerButton");
