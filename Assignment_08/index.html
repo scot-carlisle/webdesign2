@@ -3,21 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Assignment_08</title>
+    <title>Class_10</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 </head>
-<body id="mainBody">
-    <h1>Color Box</h1>
+<body>
+    <h1>Today's Color Is:</h1>
     <button id="triggerButton">Color</button>
-
-    <h2>Today's Number is: <span id="numberBox"></span></h2>
-
+    <div id="colorBox" style="width:400px;height:400px;margin-top:30px;"></div>
+    
     <script>
-      var numberSpan = document.getElementById("numberBox");
+      var numberSpan = document.getElementById("colorBox");
       var randomNumber = Math.random();
-      numberSpan.innerText = randomNumber;
-
+     
       var changeBackground = function(){
       
       var redColor = Math.random() *255;
@@ -26,12 +24,12 @@
 
       var textColor = "rgb(" + redColor + "," + greenColor + "," + blueColor + ")";
       var subHeader = numberSpan.parentElement;
-      //subHeader.style.color = textColor;// //un-note this for the h2 to change colors PART 1//
+     
 
       console.log(textColor);
 
-      var body = document.getElementById("mainBody");
-      body.style.backgroundColor = textColor; //note this to have h2 change color PART 2//
+      var colorBox = document.getElementById("colorBox");
+      colorBox.style.backgroundColor = textColor; 
       }
 
       var myButton = document.getElementById("triggerButton");
