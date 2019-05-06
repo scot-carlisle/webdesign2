@@ -1,0 +1,47 @@
+nav{
+    margin-bottom: 20px;
+    
+}
+
+nav ul{
+    list-style: none;
+    padding: 0px;
+}
+
+#navUl{
+    display: block;
+}
+
+#display-toggle{
+    padding: 3px;
+    width: 40px; 
+}
+
+#display-toggle .stripe{
+    margin-bottom: 5px;
+    display: block;
+    height: 1px;
+    width: 10px;
+    margin-top: 4px;
+}
+
+#display-toggle .stripe::before{
+    content: '';
+    position: absolute;
+    width: 21px;
+    border-top: 3px solid darkgray;
+    
+}
+
+nav li{
+    background-color: aliceblue;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+}
+
+nav li:last-child{
+    border-bottom: 0px;
+}

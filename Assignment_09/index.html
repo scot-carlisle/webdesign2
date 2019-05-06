@@ -5,9 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
+	    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script>
+        var showNavUl = function(){
+            if(navUl){
+                document.getElementById('navUl').style.display = 'block';
+            }
+            else{
+                document.getElementById('navUl').style.display = 'hidden';
+            }
+    }
+
+   document.getElementById('display-toggle').addEventListener('click', showNavUl);
+    </script>
 </head>
 <body>
-    
+    <nav>
+        <button id="display-toggle" onclick="showNavUl();">
+            <span class="stripe"></span>
+            <span class="stripe"></span>
+            <span class="stripe"></span>
+        </button>
+        <ul id="navUl">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
 </body>
 </html>
