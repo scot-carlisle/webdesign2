@@ -27,17 +27,17 @@ nav ul{
     content: '';
     position: absolute;
     width: 21px;
-    border-top: 3px solid darkgray;
-    
+    border-top: 3px solid rgb(13, 111, 197);
 }
 
 nav li{
-    background-color: aliceblue;
+    background-color: rgb(13, 111, 197);
     padding: 15px 20px;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(37, 36, 36);
     font-size: 18px;
+    font-weight: 600;
 }
 
 nav li:last-child{
