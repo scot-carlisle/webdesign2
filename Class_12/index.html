@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Class_12</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--STYLES-->
-    <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <!--SCRIPTS-->
-    <script src="main.js"></script>
+    
 </head>
 <body>
     <header>
@@ -56,6 +52,30 @@
     var modelDropdown = document.getElementById("carModel");
     makeDropdown.addEventListener("change", function(){
         console.log(this.value);
+        modelDropdown.innerHTML = "";
+
+        if(this.value === "audi"){
+            for(var i = 0; i < audiModels.length; i++){
+            modelDropdown.innerHTML += '<option value="' + audiModels[i] + '">' + audiModels[i] + '</option>';
+        }
+        }else if(this.value === 'bmw'){
+            for(var i = 0; i < bmwModels.length; i++){
+            modelDropdown.innerHTML += '<option value="' + bmwModels[i] + '">' + bmwModels[i] + '</option>';
+        }
+        }else if(this.value === 'merc'){
+            for(var i = 0; i < mercModels.length; i++){
+            modelDropdown.innerHTML += '<option value="' + mercModels[i] + '">' + mercModels[i] + '</option>';
+        }
+        }else if(this.value === 'porsche'){
+            for(var i = 0; i < porscheModels.length; i++){
+            modelDropdown.innerHTML += '<option value="' + porscheModels[i] + '">' + porscheModels[i] + '</option>';
+        }
+        }
+
+        
+        // <option value="">TEXT</option> //
+       
+
     });
     </script>
 </body>
