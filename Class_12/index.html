@@ -47,7 +47,16 @@
     </main>
 
     <script>
-    var audiModels = []
+    var audiModels = ["S3", "S5", "S7"];
+    var bmwModels = ["Series-3", "Series-4", "Series-5", "Series-7"];
+    var mercModels = ["C-Class", "E-Class", "S-Class"];
+    var porscheModels = ["911", "Macan", "Panamera", "Cayenne"];
+
+    var makeDropdown = document.getElementById("carMake");
+    var modelDropdown = document.getElementById("carModel");
+    makeDropdown.addEventListener("change", function(){
+        console.log(this.value);
+    });
     </script>
 </body>
 </html>
