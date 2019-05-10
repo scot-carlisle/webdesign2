@@ -49,4 +49,21 @@
     color: white;
   }
 
+  h1{
+      font-size: 50px;
+      color: rgb(48, 172, 69);
+      text-align: center;
+  }
+
+  #superHero{
+    font-size: 25px;
+    color: blue;
+    padding: 40px 50px;
+    margin-right: 10px;
+  }
+
+  label{
+      font-size: 40px;
+      margin-right: 20px;
+  }
   
