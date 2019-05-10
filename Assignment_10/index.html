@@ -3,80 +3,92 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Class_12</title>
+    <title>Assignment_10</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Link1</a>
-                </li>
-                <li>
-                        <a href="">Link2</a>
-                    </li>
-                    <li>
-                            <a href="">Link3</a>
-                        </li>
-                
-            </ul>
-        </nav>
-    </header>
+   
+    <nav class="topnav">
+            <a href="#home" class="active">HOME</a>
+        <div id="myLinks">
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <script>
+    function myFunction(){
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block"){
+            x.style.display = "none";
+        }else {
+            x.style.display = "block";
+        }
+    }
+    </script>
+   
     
     <main>
-        <h1>Which Car Would You Like To Test?</h1>
+        <h1>Who's Your Favorite Superhero?</h1>
 
         <form action="" method="POST">
-            <label for="carMake">CAR MAKE:</label>
-            <select name="make" id="carMake">
+            <label for="superHero">SUPERHERO:</label>
+            <select name="make" id="superHero">
                     <option value=""></option>
-                <option value="audi">Audi</option>
-                <option value="bmw">BMW</option>
-                <option value="merc">Mercedes</option>
-                <option value="porsche">Porsche</option>
+                <option value="aqua">Aquaman</option>
+                <option value="bat">Batman</option>
+                <option value="flash">The Flash</option>
+                <option value="gl">Green Lantern</option>
+                <option value="ww">Wonder Woman</option>
             </select>
 
-            <label for="carModel">Model</label>
-            <select name="model" id="carModel"></select>
+            <label for="superHero">VILLAINS</label>
+            <select name="info" id="superInfo"></select>
         </form>
     </main>
 
     <script>
-    var audiModels = ["S3", "S5", "S7"];
-    var bmwModels = ["Series-3", "Series-4", "Series-5", "Series-7"];
-    var mercModels = ["C-Class", "E-Class", "S-Class"];
-    var porscheModels = ["911", "Macan", "Panamera", "Cayenne"];
+    var aquaInfo = ["Black Manta", "King Shark", "Siren"];
+    var batInfo = ["Bane", "The Joker", "Poison Ivy", "The Penguin", "Two-Face"];
+    var flashInfo = ["Captain Cold", "Gorilla Grodd", "Heat Wave", "Mirror Master", "The Reverse Flash"];
+    var glInfo = ["Atrocitus", "Black Hand", "Parallax", "Sinestro"];
+    var wwInfo = ["Ares", "Cheetah", "Doctor Psycho", "Silver Swan"];
 
-    var makeDropdown = document.getElementById("carMake");
-    var modelDropdown = document.getElementById("carModel");
+    var makeDropdown = document.getElementById("superHero");
+    var modelDropdown = document.getElementById("superInfo");
     makeDropdown.addEventListener("change", function(){
         console.log(this.value);
         modelDropdown.innerHTML = "";
 
-        if(this.value === "audi"){
-            for(var i = 0; i < audiModels.length; i++){
-            modelDropdown.innerHTML += '<option value="' + audiModels[i] + '">' + audiModels[i] + '</option>';
+        if(this.value === "aqua"){
+            for(var i = 0; i < aquaInfo.length; i++){
+            modelDropdown.innerHTML += '<option value="' + aquaInfo[i] + '">' + aquaInfo[i] + '</option>';
         }
-        }else if(this.value === 'bmw'){
-            for(var i = 0; i < bmwModels.length; i++){
-            modelDropdown.innerHTML += '<option value="' + bmwModels[i] + '">' + bmwModels[i] + '</option>';
+        }else if(this.value === 'bat'){
+            for(var i = 0; i < batInfo.length; i++){
+            modelDropdown.innerHTML += '<option value="' + batInfo[i] + '">' + batInfo[i] + '</option>';
         }
-        }else if(this.value === 'merc'){
-            for(var i = 0; i < mercModels.length; i++){
-            modelDropdown.innerHTML += '<option value="' + mercModels[i] + '">' + mercModels[i] + '</option>';
+        }else if(this.value === 'flash'){
+            for(var i = 0; i < flashInfo.length; i++){
+            modelDropdown.innerHTML += '<option value="' + flashInfo[i] + '">' + flashInfo[i] + '</option>';
         }
-        }else if(this.value === 'porsche'){
-            for(var i = 0; i < porscheModels.length; i++){
-            modelDropdown.innerHTML += '<option value="' + porscheModels[i] + '">' + porscheModels[i] + '</option>';
+        }else if(this.value === 'gl'){
+            for(var i = 0; i < glInfo.length; i++){
+            modelDropdown.innerHTML += '<option value="' + glInfo[i] + '">' + glInfo[i] + '</option>';
+        }
+         }else if(this.value === 'ww'){
+            for(var i = 0; i < wwInfo.length; i++){
+            modelDropdown.innerHTML += '<option value="' + wwInfo[i] + '">' + wwInfo[i] + '</option>';
         }
         }
-
-        
-        // <option value="">TEXT</option> //
        
-
     });
     </script>
 </body>
