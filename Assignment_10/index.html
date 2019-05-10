@@ -19,6 +19,8 @@
         <div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="bars"></i>
+            <i class="bars"></i>
+            <i class="bars"></i>
             </a>
         </div>
     </nav>
@@ -36,22 +38,28 @@
    
     
     <main>
-        <h1>Who's Your Favorite Superhero?</h1>
-
+        <div class="title">
+                <h1>Who's Your Favorite Superhero?</h1>
+        </div>
+        
+    <div class="selector">
         <form action="" method="POST">
+        <div id="form">
             <label for="superHero">SUPERHERO:</label>
             <select name="make" id="superHero">
-                    <option value=""></option>
+                <option value=""></option>
                 <option value="aqua">Aquaman</option>
                 <option value="bat">Batman</option>
                 <option value="flash">The Flash</option>
                 <option value="gl">Green Lantern</option>
                 <option value="ww">Wonder Woman</option>
             </select>
-
-            <label for="superHero">VILLAINS</label>
+        
+            <label for="superHero">VILLAINS:</label>
             <select name="info" id="superInfo"></select>
+        </div>
         </form>
+    </div>
     </main>
 
     <script>

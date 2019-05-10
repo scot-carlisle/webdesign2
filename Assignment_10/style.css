@@ -33,8 +33,7 @@
 
   .bars{
     font-size: 24px;
-    color: orange;
-
+    color: rgb(255, 238, 0);
 }
 
   /* Add a grey background color on mouse-over */
@@ -49,21 +48,57 @@
     color: white;
   }
 
+  .title{
+    margin-left: 0px;
+    background-color: rgba(23, 69, 100, 1);
+    height: 60px;
+  }
+
   h1{
       font-size: 50px;
-      color: rgb(48, 172, 69);
+      color: whitesmoke;
       text-align: center;
   }
 
   #superHero{
     font-size: 25px;
     color: blue;
+    padding: 0px 15px;
+    margin-right: 10px;
+  }
+
+  #superInfo{
+    font-size: 25px;
+    color: blue;
     padding: 40px 50px;
     margin-right: 10px;
+    margin-top: 40px;
   }
 
   label{
       font-size: 40px;
       margin-right: 20px;
   }
+
+  select{
+    background-color: rgba(23, 69, 100, 1);
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+  }
+
+  .selector{
+    margin: auto;
+    min-height: 1500px;
+    background-image: url("https://backgrounddownload.com/wp-content/uploads/2018/09/dc-superhero-background-2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+  }
   
+  #form{
+    float: left;
+    margin-top: 500px;
+    margin-left: 20px;
+    position: absolute;
+  }
