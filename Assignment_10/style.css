@@ -44,7 +44,7 @@
   
   /* Style the active link (or home/logo) */
   .active {
-    background-color: rgb(18, 58, 189);
+    background-color: rgba(23, 69, 100, 1);
     color: white;
   }
 
@@ -62,22 +62,20 @@
 
   #superHero{
     font-size: 25px;
-    color: blue;
+    color: whitesmoke;
     padding: 0px 15px;
-    margin-right: 10px;
+    margin-right: 50px;
   }
 
   #superInfo{
     font-size: 25px;
-    color: blue;
-    padding: 40px 50px;
-    margin-right: 10px;
-    margin-top: 40px;
+    color: rgb(226, 226, 236);
+    padding: 0px 20px;
   }
 
   label{
       font-size: 40px;
-      margin-right: 20px;
+      color: whitesmoke;
   }
 
   select{
@@ -88,17 +86,16 @@
   }
 
   .selector{
-    margin: auto;
     min-height: 1500px;
     background-image: url("https://backgrounddownload.com/wp-content/uploads/2018/09/dc-superhero-background-2.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 1500px;
     position: relative;
   }
   
   #form{
     float: left;
-    margin-top: 500px;
+    margin-top: 790px;
     margin-left: 20px;
     position: absolute;
   }
