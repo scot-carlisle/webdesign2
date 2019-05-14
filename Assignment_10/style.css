@@ -29,11 +29,14 @@
     top: 0;
     min-width: 20px;
     min-height: 20px;
+    padding: 11px;
   }
 
   .bars{
-    font-size: 24px;
-    color: rgb(255, 238, 0);
+    width: 25px;
+    height: 5px;
+    background-color: whitesmoke;
+    margin: 3px 0px;
 }
 
   /* Add a grey background color on mouse-over */
