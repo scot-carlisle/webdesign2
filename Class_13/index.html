@@ -8,6 +8,7 @@
     <!--STYLES-->
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
     <style>
     .container{
         width: 500px;
@@ -15,13 +16,24 @@
         background-color: azure;
         margin: 0px;
     }
+
+    .blue-container{
+        background-color: lightskyblue;
+    }
     </style>
+
 </head>
 <body>
     <h1 class="header" id="Top">Hello World!</h1>
 
     <button id="btn1">Append Things</button>
     <button id="btn2">Prepend Things</button>
+
+    <button id="btn3">Remove Addons</button>
+    <button id="btn4">Empty Container</button>
+
+    <button id="colorToggle">Swith Color</button>
+
     <div class="container">
         I am child 1
     </div>
@@ -32,8 +44,9 @@
             $('body').css('background-color', '#a11a1e');
             $('.header').css('color', 'gray');
 
-            
-            
+            $('#colorToggle').click(function(){
+                $('.container').toggleClass('blue-container');
+            })
 
             $('#btn1').click(function(){
                 $('.container').append('<div class="container-child">I am child 2</div>');
@@ -46,6 +59,14 @@
                 $('.container').before('<div class="addon">I am Before</div>');
                 $('<div class="container-child">I am child 5</div>').prependTo('.container');
             });
+
+            $('#btn3').click(function(){
+                $('.addon').remove();
+            })
+
+            $('#btn4').click(function(){
+                $('.container').empty();
+            })
 
         })
     </script>
