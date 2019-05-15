@@ -8,16 +8,40 @@
     <!--STYLES-->
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    
+    <style>
+    .container{
+        width: 500px;
+        height: 400px;
+        background-color: azure;
+        margin: 0px;
+    }
+    </style>
 </head>
 <body>
-    <h1 class="header">Hello World!</h1>
+    <h1 class="header" id="Top">Hello World!</h1>
+
+    <div class="container">
+        I am child 1
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
         $(document).ready(function(){
-            
+            $('body').css('background-color', '#a11a1e');
+            $('.header').css('color', 'gray');
+
+            $('.container').append('<div class="container-child">I am child 2</div>')
+            $('.container').prepend('<div class="container-child">I am child 3</div>')
+
+            $('.container').after('<div class="addon">I am After</div>')
+            $('.container').before('<div class="addon">I am Before</div>')
+
+            $('<div class="container-child">I am child 4</div>').appendTo('.container')
+            $('<div class="container-child">I am child 5</div>').prependTo('.container')
         })
     </script>
 </body>
 </html>
+
+<!--append adds an element at the end of a parent element-->
+<!--prepend adds an element at the beginning of a parent element-->
