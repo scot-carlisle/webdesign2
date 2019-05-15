@@ -20,6 +20,8 @@
 <body>
     <h1 class="header" id="Top">Hello World!</h1>
 
+    <button id="btn1">Append Things</button>
+    <button id="btn2">Prepend Things</button>
     <div class="container">
         I am child 1
     </div>
@@ -30,14 +32,21 @@
             $('body').css('background-color', '#a11a1e');
             $('.header').css('color', 'gray');
 
-            $('.container').append('<div class="container-child">I am child 2</div>')
-            $('.container').prepend('<div class="container-child">I am child 3</div>')
+            
+            
 
-            $('.container').after('<div class="addon">I am After</div>')
-            $('.container').before('<div class="addon">I am Before</div>')
+            $('#btn1').click(function(){
+                $('.container').append('<div class="container-child">I am child 2</div>');
+                $('<div class="container-child">I am child 4</div>').appendTo('.container');
+                $('.container').after('<div class="addon">I am After</div>');
+            });
 
-            $('<div class="container-child">I am child 4</div>').appendTo('.container')
-            $('<div class="container-child">I am child 5</div>').prependTo('.container')
+            $('#btn2').click(function(){
+                $('.container').prepend('<div class="container-child">I am child 3</div>');      
+                $('.container').before('<div class="addon">I am Before</div>');
+                $('<div class="container-child">I am child 5</div>').prependTo('.container');
+            });
+
         })
     </script>
 </body>
