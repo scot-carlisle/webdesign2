@@ -20,6 +20,13 @@
     .blue-container{
         background-color: lightskyblue;
     }
+
+    .box{
+        width: 150px;
+        height: 150px;
+        background-color: chartreuse;
+        display: none;
+    }
     </style>
 
 </head>
@@ -36,11 +43,19 @@
 
     <div class="container">
         I am child 1
+
+        <div class="box"></div>
     </div>
 
     <form action="" method="POST">
         <input type="text" name="name" id="myName">
         <input type="email" name="email" id="myEmail">
+
+        <select id="FX" name="effects">
+            <option value="" default></option>
+            <option value="show">Show an element</option>
+            <option value="hide">Hide an element</option>
+        </select>
         <input type="submit" value="Submit">
     </form>
 
@@ -51,6 +66,16 @@
             $('.header').css('color', 'gray');
 
             console.log( $('body').css('background-color') );
+
+            $('#FX').change(function(){
+                var selection = $('#FX').val();
+                if(selection === "show"){
+                    $('.box').show();
+                }
+                else if(selection === 'hide'){
+                    $('.box').hide();
+                }
+            })
 
             $('#colorToggle').click(function(){
                 $('.container').toggleClass('blue-container');
