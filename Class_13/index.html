@@ -55,6 +55,10 @@
             <option value="" default></option>
             <option value="show">Show an element</option>
             <option value="hide">Hide an element</option>
+            <option value="fadein">Fade it in</option>
+            <option value="fadeout">Fade it out</option>
+            <option value="slidedown">Slide it down</option>
+            <option value="slideup">Slide it up</option>
         </select>
         <input type="submit" value="Submit">
     </form>
@@ -75,6 +79,19 @@
                 else if(selection === 'hide'){
                     $('.box').hide();
                 }
+                else if(selection === 'fadein'){
+                    $('.box').fadeIn(2000);    
+                }
+                else if(selection === 'fadeout'){
+                    $('.box').fadeOut(3000);
+                }
+                else if(selection === 'slidedown'){
+                    $('.box').slideDown();
+                }
+                else if(selection === 'slideup'){
+                    $('.box').slideUp();
+                }
+
             })
 
             $('#colorToggle').click(function(){
