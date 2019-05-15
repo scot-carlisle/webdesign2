@@ -38,15 +38,31 @@
         I am child 1
     </div>
 
+    <form action="" method="POST">
+        <input type="text" name="name" id="myName">
+        <input type="email" name="email" id="myEmail">
+        <input type="submit" value="Submit">
+    </form>
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
         $(document).ready(function(){
             $('body').css('background-color', '#a11a1e');
             $('.header').css('color', 'gray');
 
+            console.log( $('body').css('background-color') );
+
             $('#colorToggle').click(function(){
                 $('.container').toggleClass('blue-container');
             })
+
+            $('#myName').blur(function(){
+                console.log( $('#myName').val() );
+
+                if($('#myName').val() === "Maxim"){
+                    $('#myEmail').val('safiouline_maxim@smc.edu');
+                }
+            });
 
             $('#btn1').click(function(){
                 $('.container').append('<div class="container-child">I am child 2</div>');
