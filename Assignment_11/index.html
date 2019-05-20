@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>test</title>
+    <title>Assignment_11</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--STYLES-->
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
@@ -96,19 +96,27 @@
     .small-33{
         width: 33.3333%;
     }
+
+    select{
+        background-color: whitesmoke;
+    }
     </style>
 
 </head>
 <body>
-    <h1 class="header" id="Top">Hello World!</h1>
+    <h1 class="header" id="Top">Dogs and Cats!</h1>
 
-    <button id="btn1">Append Things</button>
-    <button id="btn2">Prepend Things</button>
-
-    <button id="btn3">Remove Addons</button>
-    <button id="btn4">Empty Container</button>
-
-    <button id="colorToggle">Swith Color</button>
+    <form action="" method="POST">
+        <select id="FX" name="effects">
+            <option value="" default>Select</option>
+            <option value="show">Show an element</option>
+            <option value="hide">Hide an element</option>
+            <option value="fadein">Fade it in</option>
+            <option value="fadeout">Fade it out</option>
+            <option value="slidedown">Slide it down</option>
+            <option value="slideup">Slide it up</option>
+        </select>
+    </form>
 
     <div class="container">
        <div class="box1 small-33"></div>
@@ -122,27 +130,13 @@
        <div class="box9 small-33"></div>
     </div>
 
-    <form action="" method="POST">
-        <input type="text" name="name" id="myName">
-        <input type="email" name="email" id="myEmail">
-
-        <select id="FX" name="effects">
-            <option value="" default></option>
-            <option value="show">Show an element</option>
-            <option value="hide">Hide an element</option>
-            <option value="fadein">Fade it in</option>
-            <option value="fadeout">Fade it out</option>
-            <option value="slidedown">Slide it down</option>
-            <option value="slideup">Slide it up</option>
-        </select>
-        <input type="submit" value="Submit">
-    </form>
+    
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
         $(document).ready(function(){
-            $('body').css('background-color', '#a11a1e');
-            $('.header').css('color', 'gray');
+            $('body').css('background-color', '#b02dbf');
+            $('.header').css('color', 'whitesmoke');
 
             console.log( $('body').css('background-color') );
 
@@ -150,29 +144,39 @@
                 var selection = $('#FX').val();
                 if(selection === "show"){
                     $('.box1').show();
-                    $('.box2').show();
                     $('.box3').show();
-                    $('.box4').show();
                     $('.box5').show();
-                    $('.box6').show();
                     $('.box7').show();
-                    $('.box8').show();
                     $('.box9').show();
                 }
                 else if(selection === 'hide'){
                     $('.box1').hide();
+                    $('.box3').hide();
+                    $('.box5').hide();
+                    $('.box7').hide();
+                    $('.box9').hide();
                 }
                 else if(selection === 'fadein'){
-                    $('.box1').fadeIn(2000);    
+                    $('.box2').fadeIn(2000);    
+                    $('.box4').fadeIn(2000);    
+                    $('.box6').fadeIn(2000);    
+                    $('.box8').fadeIn(2000);    
                 }
                 else if(selection === 'fadeout'){
-                    $('.box1').fadeOut(3000);
+                    $('.box2').fadeOut(3000);
+                    $('.box4').fadeOut(3000);
+                    $('.box6').fadeOut(3000);
+                    $('.box8').fadeOut(3000);
                 }
                 else if(selection === 'slidedown'){
                     $('.box1').slideDown();
+                    $('.box2').slideDown();
+                    $('.box3').slideDown();
                 }
                 else if(selection === 'slideup'){
                     $('.box1').slideUp();
+                    $('.box2').slideUp();
+                    $('.box3').slideUp();
                 }
 
             })
