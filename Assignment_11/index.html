@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Class_13</title>
+    <title>test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--STYLES-->
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
@@ -21,20 +21,80 @@
         background-color: lightskyblue;
     }
 
-    .floater-section{
+    .box1{
         float: left;
         width: 100%;
         min-height: 200px;
-    }
-
-    .box1{
-        width: 33%;
         background-image: url("https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
         display: none;
     }
 
-    .clearfix{
-        clear: both;
+    .box2{
+        float: left;
+        width: 100%;
+        min-height: 200px;
+        background-image: url("https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        display: none;
+    }
+
+    .box3{
+        float: left;
+        width: 100%;
+        min-height: 200px;
+        background-image: url("https://nhl.bamcontent.com/images/photos/301406224/1024x576/cut.jpg");
+        display: none;
+    }
+
+    .box4{
+        float: left;
+        width: 100%;
+        min-height: 200px;
+        background-image: url("https://ichef.bbci.co.uk/images/ic/720x405/p0517py6.jpg");
+        display: none;
+    }
+
+    .box5{
+        float: left;
+        width: 100%;
+        min-height: 200px;
+        background-image: url("https://timesofindia.indiatimes.com/thumb/msid-60132235,imgsize-169468,width-800,height-600,resizemode-4/60132235.jpg");
+        display: none;
+    }
+
+    .box6{
+        float: left;
+        width: 100%;
+        min-height: 200px;
+        background-image: url("https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg");
+        display: none;
+    }
+
+    .box7{
+        float: left;
+        width: 100%;
+        min-height: 200px;
+        background-image: url("https://www.abc.net.au/news/image/11019006-3x2-700x467.jpg");
+        display: none;
+    }
+
+    .box8{
+        float: left;
+        width: 100%;
+        min-height: 200px;
+        background-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,h_1193,w_2121,x_0,y_175/f_auto,q_auto,w_1100/v1554921998/shape/mentalfloss/549585-istock-909106260.jpg");
+        display: none;
+    }
+
+    .box9{
+        float: left;
+        width: 100%;
+        min-height: 200px;
+        background-image: url("https://www.therapydogs.com/wp-content/uploads/2017/06/puppy.jpg");
+        display: none;
+    }
+
+    .small-33{
+        width: 33.3333%;
     }
     </style>
 
@@ -51,19 +111,15 @@
     <button id="colorToggle">Swith Color</button>
 
     <div class="container">
-        I am child 1
-        <div class="floater-section">
-            <div class="box1"></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
-            <div class="box4"></div>
-            <div class="box5"></div>
-            <div class="box6"></div>
-            <div class="box7"></div>
-            <div class="box8"></div>
-            <div class="box9"></div>
-        </div>
-        <div class="clearfix"></div>
+       <div class="box1 small-33"></div>
+       <div class="box2 small-33"></div>
+       <div class="box3 small-33"></div>
+       <div class="box4 small-33"></div>
+       <div class="box5 small-33"></div>
+       <div class="box6 small-33"></div>
+       <div class="box7 small-33"></div>
+       <div class="box8 small-33"></div>
+       <div class="box9 small-33"></div>
     </div>
 
     <form action="" method="POST">
@@ -94,6 +150,14 @@
                 var selection = $('#FX').val();
                 if(selection === "show"){
                     $('.box1').show();
+                    $('.box2').show();
+                    $('.box3').show();
+                    $('.box4').show();
+                    $('.box5').show();
+                    $('.box6').show();
+                    $('.box7').show();
+                    $('.box8').show();
+                    $('.box9').show();
                 }
                 else if(selection === 'hide'){
                     $('.box1').hide();
@@ -105,10 +169,10 @@
                     $('.box1').fadeOut(3000);
                 }
                 else if(selection === 'slidedown'){
-                    $('.box').slideDown();
+                    $('.box1').slideDown();
                 }
                 else if(selection === 'slideup'){
-                    $('.box').slideUp();
+                    $('.box1').slideUp();
                 }
 
             })
