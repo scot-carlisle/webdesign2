@@ -10,85 +10,92 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 
     <style>
-    .container{
-        width: 1500px;
-        height: 1500px;
-        background-color: azure;
-        margin: 0px;
-    }
-
-    .blue-container{
-        background-color: lightskyblue;
-    }
+    
 
     .box1{
         float: left;
-        width: 100%;
-        min-height: 200px;
+        background-size: contain;
+        background-repeat: round;
+        min-height: 215px;
         background-image: url("https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
         display: none;
     }
 
     .box2{
         float: left;
-        width: 100%;
-        min-height: 200px;
+        background-size: contain;
+        background-repeat: round;
+        min-height: 215px;
         background-image: url("https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        display: none;
+    }
+
+    .box1F, .box2F, .box3F, .box4F, .box5F, .box6F, .box7F, .box8F, .box9F{
+        float: left;
+        min-height: 215px;
+        background-color: aquamarine;
         display: none;
     }
 
     .box3{
         float: left;
-        width: 100%;
-        min-height: 200px;
+        background-size: contain;
+        background-repeat: round;
+        min-height: 215px;
         background-image: url("https://nhl.bamcontent.com/images/photos/301406224/1024x576/cut.jpg");
         display: none;
     }
 
     .box4{
         float: left;
-        width: 100%;
-        min-height: 200px;
+        background-size: contain;
+        background-repeat: round;
+        min-height: 215px;
         background-image: url("https://ichef.bbci.co.uk/images/ic/720x405/p0517py6.jpg");
         display: none;
     }
 
     .box5{
         float: left;
-        width: 100%;
-        min-height: 200px;
+        background-size: contain;
+        background-repeat: round;
+        min-height: 215px;
         background-image: url("https://timesofindia.indiatimes.com/thumb/msid-60132235,imgsize-169468,width-800,height-600,resizemode-4/60132235.jpg");
         display: none;
     }
 
     .box6{
         float: left;
-        width: 100%;
-        min-height: 200px;
+        background-size: contain;
+        background-repeat: round;
+        min-height: 215px;
         background-image: url("https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg");
         display: none;
     }
 
     .box7{
         float: left;
-        width: 100%;
-        min-height: 200px;
+        background-size: contain;
+        background-repeat: round;
+        min-height: 215px;
         background-image: url("https://www.abc.net.au/news/image/11019006-3x2-700x467.jpg");
         display: none;
     }
 
     .box8{
         float: left;
-        width: 100%;
-        min-height: 200px;
+        background-size: contain;
+        background-repeat: round;
+        min-height: 215px;
         background-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,h_1193,w_2121,x_0,y_175/f_auto,q_auto,w_1100/v1554921998/shape/mentalfloss/549585-istock-909106260.jpg");
         display: none;
     }
 
     .box9{
         float: left;
-        width: 100%;
-        min-height: 200px;
+        background-size: contain;
+        background-repeat: round;
+        min-height: 215px;
         background-image: url("https://www.therapydogs.com/wp-content/uploads/2017/06/puppy.jpg");
         display: none;
     }
@@ -117,17 +124,26 @@
             <option value="slideup">Slide it up</option>
         </select>
     </form>
-
+    
     <div class="container">
        <div class="box1 small-33"></div>
+       <div class="box1F small-33"></div>
        <div class="box2 small-33"></div>
+       <div class="box2F small-33"></div>
        <div class="box3 small-33"></div>
+       <div class="box3F small-33"></div>
        <div class="box4 small-33"></div>
+       <div class="box4F small-33"></div>
        <div class="box5 small-33"></div>
+       <div class="box5F small-33"></div>
        <div class="box6 small-33"></div>
+       <div class="box6F small-33"></div>
        <div class="box7 small-33"></div>
+       <div class="box7F small-33"></div>
        <div class="box8 small-33"></div>
+       <div class="box8F small-33"></div>
        <div class="box9 small-33"></div>
+       <div class="box9F small-33"></div>
     </div>
 
     
@@ -138,35 +154,51 @@
             $('body').css('background-color', '#b02dbf');
             $('.header').css('color', 'whitesmoke');
 
-            console.log( $('body').css('background-color') );
-
             $('#FX').change(function(){
                 var selection = $('#FX').val();
                 if(selection === "show"){
                     $('.box1').show();
+                    $('.box2F').show();
                     $('.box3').show();
+                    $('.box4F').show();
                     $('.box5').show();
+                    $('.box6F').show();
                     $('.box7').show();
+                    $('.box8F').show();
                     $('.box9').show();
                 }
                 else if(selection === 'hide'){
                     $('.box1').hide();
+                    $('.box2F').hide();
                     $('.box3').hide();
+                    $('.box4F').hide();
                     $('.box5').hide();
+                    $('.box6F').hide();
                     $('.box7').hide();
+                    $('.box8F').hide();
                     $('.box9').hide();
                 }
                 else if(selection === 'fadein'){
-                    $('.box2').fadeIn(2000);    
-                    $('.box4').fadeIn(2000);    
-                    $('.box6').fadeIn(2000);    
-                    $('.box8').fadeIn(2000);    
+                    $('.box1F').fadeIn(2500);    
+                    $('.box2').fadeIn(2500); 
+                    $('.box3F').fadeIn(2500);     
+                    $('.box4').fadeIn(2500);  
+                    $('.box5F').fadeIn(2500);    
+                    $('.box6').fadeIn(2500);  
+                    $('.box7F').fadeIn(2500);    
+                    $('.box8').fadeIn(2500); 
+                    $('.box9F').fadeIn(2500);     
                 }
                 else if(selection === 'fadeout'){
-                    $('.box2').fadeOut(3000);
-                    $('.box4').fadeOut(3000);
-                    $('.box6').fadeOut(3000);
-                    $('.box8').fadeOut(3000);
+                    $('.box1F').fadeOut(2500);
+                    $('.box2').fadeOut(2500);
+                    $('.box3F').fadeOut(2500);
+                    $('.box4').fadeOut(2500);
+                    $('.box5F').fadeOut(2500);
+                    $('.box6').fadeOut(2500);
+                    $('.box7F').fadeOut(2500);
+                    $('.box8').fadeOut(2500);
+                    $('.box9F').fadeOut(2500);
                 }
                 else if(selection === 'slidedown'){
                     $('.box1').slideDown();
@@ -180,43 +212,7 @@
                 }
 
             })
-
-            $('#colorToggle').click(function(){
-                $('.container').toggleClass('blue-container');
-            })
-
-            $('#myName').blur(function(){
-                console.log( $('#myName').val() );
-
-                if($('#myName').val() === "Maxim"){
-                    $('#myEmail').val('safiouline_maxim@smc.edu');
-                }
-            });
-
-            $('#btn1').click(function(){
-                $('.container').append('<div class="container-child">I am child 2</div>');
-                $('<div class="container-child">I am child 4</div>').appendTo('.container');
-                $('.container').after('<div class="addon">I am After</div>');
-            });
-
-            $('#btn2').click(function(){
-                $('.container').prepend('<div class="container-child">I am child 3</div>');      
-                $('.container').before('<div class="addon">I am Before</div>');
-                $('<div class="container-child">I am child 5</div>').prependTo('.container');
-            });
-
-            $('#btn3').click(function(){
-                $('.addon').remove();
-            })
-
-            $('#btn4').click(function(){
-                $('.container').empty();
-            })
-
         })
     </script>
 </body>
 </html>
-
-<!--append adds an element at the end of a parent element-->
-<!--prepend adds an element at the beginning of a parent element-->
