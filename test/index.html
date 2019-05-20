@@ -11,8 +11,8 @@
 
     <style>
     .container{
-        width: 1500px;
-        height: 1500px;
+        width: 500px;
+        height: 400px;
         background-color: azure;
         margin: 0px;
     }
@@ -21,20 +21,11 @@
         background-color: lightskyblue;
     }
 
-    .floater-section{
-        float: left;
-        width: 100%;
-        min-height: 200px;
-    }
-
     .box1{
-        width: 33%;
-        background-image: url("https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        width: 150px;
+        height: 150px;
+        background-color: chartreuse;
         display: none;
-    }
-
-    .clearfix{
-        clear: both;
     }
     </style>
 
@@ -52,18 +43,8 @@
 
     <div class="container">
         I am child 1
-        <div class="floater-section">
-            <div class="box1"></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
-            <div class="box4"></div>
-            <div class="box5"></div>
-            <div class="box6"></div>
-            <div class="box7"></div>
-            <div class="box8"></div>
-            <div class="box9"></div>
-        </div>
-        <div class="clearfix"></div>
+
+        <div class="box1"></div>
     </div>
 
     <form action="" method="POST">
@@ -105,10 +86,10 @@
                     $('.box1').fadeOut(3000);
                 }
                 else if(selection === 'slidedown'){
-                    $('.box').slideDown();
+                    $('.box1').slideDown();
                 }
                 else if(selection === 'slideup'){
-                    $('.box').slideUp();
+                    $('.box1').slideUp();
                 }
 
             })
