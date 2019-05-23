@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Template</title>
+    <title>Final</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--STYLES-->
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
@@ -11,6 +11,33 @@
    
 </head>
 <body>
-    
+
+<nav class="topnav">
+        <a href="" class="active">HOME</a>
+    <div id="myLinks">
+        <a href="pages/about.html" target="_self">ABOUT</a>
+        <a href="pages/blog.html" target="_self">BLOG</a>
+        <a href="pages/donations.html" target="_self">DONATE</a>
+    </div>
+    <div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+        </a>
+    </div>
+</nav>
+
+<script>
+        function myFunction(){
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block"){
+                x.style.display = "none";
+            }else {
+                x.style.display = "block";
+            }
+        }
+</script>
+
 </body>
 </html>
