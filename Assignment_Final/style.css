@@ -6,8 +6,10 @@
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
+  .topnav ul {
     display: none;
+    list-style: none;
+    padding-left: 0px;
   }
   
   /* Style navigation menu links */
@@ -50,3 +52,34 @@
     background-color: rgba(23, 69, 100, 1);
     color: white;
   }
+
+  /*----------SMALL SCREENS----------*/
+@media(min-width:450px){
+    .container{
+        width: 440px;
+    }
+
+    .small-width-25{
+        width: 25%;
+    }
+
+    .small-width-33{
+        width: 33.3333%;
+    }
+
+    .small-width-50{
+        width: 50%;
+    }
+
+    .small-width-66{
+        width: 66.6666%;
+    }
+
+    .small-width-75{
+        width: 75%;
+    }
+
+    .small-width-100{
+        width: 100%;
+    }
+}
