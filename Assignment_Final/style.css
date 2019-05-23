@@ -5,7 +5,7 @@
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
-    background-color: rgb(190, 15, 15);
+    background-image: linear-gradient(red, yellow);
     position: relative;
     font-family: 'Poiret One', cursive;
   }
@@ -21,17 +21,20 @@
   .topnav a {
     font-weight: 600;
     letter-spacing: 2px;
-    color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     display: block;
     text-align: center;
+  }
+
+  #myLinks li a{
+      color: rgba(23, 69, 100, 1);
   }
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background: rgb(19, 18, 18);
+    background: #ddd;
     display: block;
     position: absolute;
     right: 0;
@@ -39,13 +42,19 @@
     min-width: 20px;
     min-height: 20px;
     padding: 11px;
+    
+  }
+
+  li{
+    text-shadow: 0px 1px #ddd;
   }
 
   .bars{
     margin: -4px;
     font-family: 'Poiret One', cursive;
     font-size: 30px;
-    
+    color: rgba(23, 69, 100, 1);
+    text-shadow: 0px 1px white;
 }
 
   /* Add a grey background color on mouse-over */
@@ -62,7 +71,6 @@
 
   .container{
     margin: auto;
-    background-color: lemonchiffon;
 }
 
 .floater-section{
@@ -74,6 +82,40 @@
 
 .clearfix{
     clear: both;
+}
+
+.container img{
+    width: 100%;
+    margin: 20px 0px 10px 0px;
+}
+
+h1{
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 4px;
+    color: rgba(23, 69, 100, 1);
+    text-shadow: 2px 3px #ddd;
+}
+
+h2{
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+    margin-top: 0px;
+    color: rgba(23, 69, 100, 1);
+}
+
+h3{
+    font-family: 'Poiret One', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0px;
+    color: rgba(23, 69, 100, 1);
+    background-image: linear-gradient(#ff7d0f, yellow);
+    padding: 7px 0px;
+    text-shadow: 0px 1px #ddd;
 }
 
   /*----------SMALL SCREENS----------*/
