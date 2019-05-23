@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+
+
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
     background-color: rgb(190, 15, 15);
     position: relative;
+    font-family: 'Poiret One', cursive;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -14,6 +19,8 @@
   
   /* Style navigation menu links */
   .topnav a {
+    font-weight: 600;
+    letter-spacing: 2px;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -35,10 +42,10 @@
   }
 
   .bars{
-    width: 25px;
-    height: 5px;
-    background-color: whitesmoke;
-    margin: 3px 0px;
+    margin: -4px;
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    
 }
 
   /* Add a grey background color on mouse-over */
@@ -52,6 +59,22 @@
     background-color: rgba(23, 69, 100, 1);
     color: white;
   }
+
+  .container{
+    margin: auto;
+    background-color: lemonchiffon;
+}
+
+.floater-section{
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.clearfix{
+    clear: both;
+}
 
   /*----------SMALL SCREENS----------*/
 @media(min-width:450px){
@@ -80,6 +103,68 @@
     }
 
     .small-width-100{
+        width: 100%;
+    }
+}
+
+/*----------MEDIUM SCREENS----------*/
+@media(min-width:768px){
+    .container{
+        width: 760px;
+    }
+
+    .medium-width-25{
+        width: 25%;
+    }
+
+    .medium-width-33{
+        width: 33.3333%;
+    }
+
+    .medium-width-50{
+        width: 50%;
+    }
+
+    .medium-width-66{
+        width: 66.6666%;
+    }
+
+    .medium-width-75{
+        width: 75%;
+    }
+
+    .medium-width-100{
+        width: 100%;
+    }
+}
+
+/*----------LARGE SCREENS----------*/
+@media(min-width:992px){
+    .container{
+        width: 960px;
+    }
+
+    .large-width-25{
+        width: 25%;
+    }
+
+    .large-width-33{
+        width: 33.3333%;
+    }
+
+    .large-width-50{
+        width: 50%;
+    }
+
+    .large-width-66{
+        width: 66.6666%;
+    }
+
+    .large-width-75{
+        width: 75%;
+    }
+
+    .large-width-100{
         width: 100%;
     }
 }
