@@ -109,17 +109,31 @@ h2{
     color: rgba(23, 69, 100, 1);
 }
 
- .blogText{
-    text-align: center;
+.blogText{
     font-size: 20px;
     font-family: 'Poiret One', cursive;
     margin-top: 0px;
     color: rgba(23, 69, 100, 1);
 }
 
+.blogTitles{
+    margin-bottom: 0px;
+}
+
+.blogTimes{
+    margin-top: 8px;
+    margin-bottom: 35px;
+}
+
 #history{
     margin-top: 40px;
     margin-bottom: 10px;
+    font-size: 25px;
+}
+
+#events{
+    margin-top: 20px;
+    margin-bottom: 60px;
     font-size: 25px;
 }
 
@@ -136,8 +150,7 @@ h3{
 }
 
 p{
-    text-shadow: 0px 2px #ddd;
-    text-align: justify;
+    text-align: center;
     line-height: 27px;
     font-family: 'Poiret One', cursive;
     font-size: 20px;
@@ -162,14 +175,22 @@ p{
 @media(min-width:450px){
     .container{
         width: 440px;
+        padding-right: 10px
     }
 
+    .container img{
+        padding-right: 10px
+    }
+
+    #lastpic{
+        padding-right: 0px;
+    }
     .small-width-25{
         width: 25%;
     }
 
     .small-width-33{
-        width: 33.3333%;
+        width: 31.3333%;
     }
 
     .small-width-50{
@@ -200,7 +221,7 @@ p{
     }
 
     .medium-width-33{
-        width: 33.3333%;
+        width: 32.3333%;
     }
 
     .medium-width-50{
@@ -235,7 +256,7 @@ p{
     }
 
     .large-width-50{
-        width: 50%;
+        width: 48.9%;
     }
 
     .large-width-66{
