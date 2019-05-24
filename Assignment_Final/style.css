@@ -109,6 +109,14 @@ h2{
     color: rgba(23, 69, 100, 1);
 }
 
+ .blogText{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poiret One', cursive;
+    margin-top: 0px;
+    color: rgba(23, 69, 100, 1);
+}
+
 #history{
     margin-top: 40px;
     margin-bottom: 10px;
@@ -137,6 +145,17 @@ p{
     font-weight: 600;
     padding: 0px 10px 20px 10px;
     margin-top: 0px;
+}
+
+.floater-section{
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.clearfix{
+    clear: both;
 }
 
   /*----------SMALL SCREENS----------*/
