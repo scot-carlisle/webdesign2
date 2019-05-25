@@ -38,13 +38,54 @@
 
 <div class="container">
 
-    <h1 id="about">About Beyond Baroque</h1>
+    <h1 id="about">Support Beyond Baroque By Becoming A Member Or Making A Donation</h1>
 
-    <h2 id="history">Beyond Baroque's History</h2>
+    <h2 id="history">Programming, workshops, the bookstore, and archives are all funded by memberships, private sponsors, and grants.</h2>
 
-    <p>Beyond Baroque is one of the United States' leading independent Literary | Arts Centers and public spaces dedicated to expanding the public's knowledge of poetry, literature and art through cultural events and community interaction. Founded in 1968, Beyond Baroque is based out of the original City Hall building in Venice, California. The Center offers a diverse variety of literary and arts programming including readings, workshops, new music and education. The building also houses a bookstore with the largest collection of new poetry books and CDs for sale and an archive that houses over 40,000 books, including small press and limited-edition publications, chronicling the history of poetry movements in Los Angeles and beyond. Through the years, Beyond Baroque has played muse to the Venice Beats, the burgeoning Punk movement and visiting scholars. Many of the city's leading literary talents, including Dennis Cooper, Wanda Coleman, Tom Waits, Exene Cervenkova and Amy Gerstler, are alumni of the Wednesday night poetry workshop. Many of the worlds most well known independent artists, including Patti Smith, Michael McClure, Dana Gioia, and Viggo Mortensen have performed on its stage.</p>
+    <p class="donatetext"><strong>$40 Foundation Level:</strong> <br>Free admission for a year.<br>
+        <strong>$60 Supporter Level:</strong> <br>Free admission for the member and a guest for a year.<br>
+        <strong>$30 Students Membership with ID:</strong> <br>Free admission for a year.<br>
+        <strong>$30 Senior Level (65+):</strong> <br>Free admission for a year.<br>
+        <strong>$100 Friend Level:</strong> <br>Free admission for the member and  a guest for a year, plus a 20% discount on bookstore purchases.<br>
+        <strong>$250 Benefactor:</strong> <br>All the benefits of a Friend Level membership, plus an admission for two guests.<br>
+        <strong>$500 Sponsor:</strong><br> All the benefits of the Benefactor Level membership, plus your name in the Angels Above listing on the website and in the quarterly print calendar.<br>
+        <strong>$1000 Patron:</strong><br>All the benefits of the Sponsor Level membership, entry for up to 10 guests, and your name in the Angels Above and Beyond lising on the website and in the quarterly print calendar.</p>
+
+        <h2>All members receive a copy of the quarterly print calendar delivered to their door.</h2>
 
 </div>
+
+<div class="container floater-section2 small-width-47 medium-width-48 large-width-50">
+    
+    <button id="membership">Membership</button>
+    
+</div>
+
+<div class="container floater-section2 small-width-47 medium-width-48 large-width-50">
+    
+    <button id="donate">Donation</button>
+    
+</div>
+<div class="clearfix"></div>
+
+   <div class="c2"></div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+ 
+        $('#membership').click(function(){
+            $('.c2').after('<div class="container"><p>Thank you for becoming a memeber of Beyond Baroque</p></div>');
+        });
+
+        $('#donate').click(function(){
+            $('.c2').after('<div class="container"><p>Thank you for your generous donation</p></div>');
+        });
+
+       
+
+        
+   
+</script>
     
 </body>
 </html>
