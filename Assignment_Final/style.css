@@ -2,7 +2,7 @@
 
 .topnav {
     overflow: hidden;
-    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient( to right bottom, red, yellow);
     position: relative;
     font-family: 'Poiret One', cursive;
   }
