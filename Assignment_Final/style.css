@@ -67,6 +67,12 @@
     margin-bottom: 20px;
 }
 
+.floater-section1{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .floater-section2{
     float: left;
     width: 100%;
