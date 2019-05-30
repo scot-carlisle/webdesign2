@@ -56,29 +56,47 @@
 </div>
 
 <div class="container floater-section2 small-width-47 medium-width-48 large-width-50">
+    <form>
+        <input type="checkbox" name="amount" value="40">$40 Foundation Level<br>
+        <input type="checkbox" name="amount" value="60">$60 Supporter Level<br>
+        <input type="checkbox" name="amount" value="30">$30 Student or Senior Level<br>
+        <input type="checkbox" name="amount" value="100">$40 Friend Level<br>
+        <input type="checkbox" name="amount" value="250">$250 Benefactor<br>
+        <input type="checkbox" name="amount" value="500">$500 Sponsor<br>
+        <input type="checkbox" name="amount" value="1000">$1000 Patron<br>
+    </form>
    
     <button id="membership">Membership</button>
     
 </div>
 
 <div class="container floater-section2 small-width-47 medium-width-48 large-width-50">
-   
-    <button id="donate">Donation</button>
+    <form>
+        <input type="checkbox" name="amount" value="10">$10 Donation<br>
+        <input type="checkbox" name="amount" value="25">$25 Donation<br>
+        <input type="checkbox" name="amount" value="40">$40 Donation<br>
+        <input type="checkbox" name="amount" value="50">$50 Donation<br>
+        <input type="checkbox" name="amount" value="100">$100 Donation<br>
+        <input type="checkbox" name="amount" value="250">$250 Donation<br>
+        <input type="checkbox" name="amount" value="1000">$1000 Donation<br>
+    </form>
+    <button id="donate">Donate</button>
     
 </div>
 <div class="clearfix"></div>
 
+   <div class="c2"></div>
    <div class="c2"></div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script>
  
         $('#membership').click(function(){
-            $('.c2').after('<div class="container"><p>Thank you for becoming a memeber of Beyond Baroque</p></div>');
+            $('.c2').after('<div class="container floater-section2 small-width-47 medium-width-48 large-width-50"><p>Thank you for becoming a memeber of Beyond Baroque</p></div>');
         });
 
         $('#donate').click(function(){
-            $('.c2').after('<div class="container"><p>Thank you for your generous donation</p></div>');
+            $('.c2').after('<div class="container floater-section2 small-width-47 medium-width-48 large-width-50"><p>Thank you for your generous donation</p></div>');
         });
 
        
