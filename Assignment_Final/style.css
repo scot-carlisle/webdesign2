@@ -238,6 +238,37 @@ button{
 
 /*----------MEDIUM SCREENS----------*/
 @media(min-width:768px){
+    .topnav ul {
+        display: inline-flex;
+        list-style: none;
+        padding-left: 0px;
+    }
+      
+    .topnav a {
+        font-weight: 600;
+        letter-spacing: 2px;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        display: inline-flex;
+        text-align: center;
+    }
+    
+    #myLinks li a{
+          color: #fff;
+    }
+      
+    .topnav a.icon {
+        background: #ddd;
+        display: inline-flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        min-width: 20px;
+        min-height: 20px;
+        padding: 11px;
+    }
+
     .container{
         width: 760px;
     }
@@ -268,6 +299,7 @@ button{
     .medium-width-100{
         width: 100%;
     }
+
 }
 
 /*----------LARGE SCREENS----------*/
