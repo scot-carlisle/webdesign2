@@ -198,20 +198,8 @@ button{
         padding-right: 10px
     }
     
-    li{
-        display: inline-block;
-    }
-
-    #myLinks{
-        display: inline-block;
-    }
-
     .container img{
         padding-right: 10px
-    }
-
-    .topnav a.icon{
-        display: none;
     }
 
     #lastpic{
