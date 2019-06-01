@@ -10,30 +10,30 @@
    
 </head>
 <body>
-
-        <nav class="topnav">
-                <a href="" class="active">DONATE</a>
-            <ul id="myLinks">
-                <li><a href="../index.html" target="_self">HOME</a></li>
-                <li><a href="../pages/about.html" target="_self">ABOUT</a></li>
-                <li><a href="../pages/blog.html" target="_self">BLOG</a></li>
+        <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                    </span>
+                <a href="" class="logo">BB</a>
+            <ul class="main-nav" id="js-menu">
+                    <li><a href="../index.html" target="_self" class="nav-links">HOME</a></li>
+                    <li><a href="../pages/about.html" target="_self" class="nav-links">ABOUT</a></li>
+                    <li><a href="../pages/blog.html" target="_self" class="nav-links">BLOG</a></li>
+                    <li><a href="" target="_self" class="nav-links">DONATE</a></li>
             </ul>
-            <div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <div class="bars">BB</div>
-                </a>
-            </div>
+            
         </nav>
-
+        
         <script>
-                function myFunction(){
-                    var x = document.getElementById("myLinks");
-                    if (x.style.display === "block"){
-                        x.style.display = "none";
-                    }else {
-                        x.style.display = "block";
-                    }
-                }
+               let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        
+        navBarToggle.addEventListener('click', function () {
+          mainNav.classList.toggle('active');
+        });
+        
         </script>
 
 <div class="container">
