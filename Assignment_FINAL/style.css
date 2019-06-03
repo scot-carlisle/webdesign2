@@ -102,6 +102,7 @@ h1{
     font-size: 35px;
     margin-top: 4px;
     margin-bottom: 4px;
+    margin-left: -10px;
     color: rgba(23, 69, 100, 1);
     text-shadow: 2px 3px #ddd;
 }
@@ -123,6 +124,7 @@ h2{
     font-size: 20px;
     font-family: 'Poiret One', cursive;
     margin-top: 0px;
+    margin-left: -10px;
     color: rgba(23, 69, 100, 1);
 }
 
@@ -243,6 +245,14 @@ button{
         padding-right: 0px;
     }
 
+    .Hinfo{
+         margin-left: -10px;
+    }
+
+    .Hcont{
+        margin-left: -10px;
+    }
+
     .small-width-25{
         width: 25%;
     }
@@ -299,15 +309,14 @@ button{
     }
 
     .logo {
-            margin-top: 0;
-            display: inline-block;
-            font-size: 37px;
-            margin-left: 8px;
-            color: rgba(23, 69, 100, 1);
-            background-color: #ddd;
-            width: 40px;
-            text-align: center;
-        
+        margin-top: 0;
+        display: inline-block;
+        font-size: 37px;
+        margin-left: 8px;
+        color: rgba(23, 69, 100, 1);
+        background-color: #ddd;
+        width: 40px;
+        text-align: center;   
     }
 
     .navbar-toggle {
